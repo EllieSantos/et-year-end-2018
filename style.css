@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+} 
+body {
+    margin: 0;
+    font-size: 16px;
+    position: relative;
+}
+
+/* FONT */
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* GLOBAL CSS */
+.text-ffffff {
+    color: #ffffff;
+}
+.text-24abe1 {
+    color: #24abe1;
+}
+.bg-0d1336 {
+    background-color: #0d1336;
+    font-family: 'Helvetica Neue LT Pro', sans-serif;
+}
+h2,
+.h2 {
+    font-size: 4em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h3, 
+.h3 {
+    font-size: 2.25em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h4, 
+.h4 {
+    font-size: 2.5em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h5, 
+.h5 {
+    font-size: 4em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+}
+
+/* SECTION ONE CSS */
+.section-one {
+    min-height: 3280px;
+    background-image: url(img/year-end-2018-bg-image.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding: 160px 0;
+}
+.section-one .year-end-et-logo {
+    max-width: 482px;
+    margin: 0 auto;
+    display: block;
+}
+.section-one .main-content {
+    padding: 260px 15px;
+}
+.section-one .animated-ball-container {
+    background-image: url(img/year-end-2018-pole.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    min-height: 2228px;
+    position: relative;
+}
+.section-one .animated-ball-container .animated-disco-ball {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    animation: example 20s infinite;
+    -webkit-animation: disco-ball 20s infinite; /* Safari 4+ */
+    -moz-animation: disco-ball 20s infinite; /* Fx 5+ */
+    -o-animation: disco-ball 20s infinite; /* Opera 12+ */
+    animation: disco-ball 20s infinite; /* IE 10+, Fx 29+ */
+}
+/* Standard syntax */
+
+
+.animated-ball-container::before {
+    content: "2018";
+    color: #24abe1;
+    font-size: 7em;
+    position: absolute;
+    top: -160px;
+    z-index: 999;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1;
+    width: 100%;
+    font-weight: 700;
+    font-family: 'Helvetica Neue LT Pro', sans-serif;
+}
+.animated-ball-container::after {
+    content: "2019";
+    color: #24abe1;
+    font-size: 7em;
+    position: absolute;
+    bottom: -160px;
+    z-index: 999;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1;
+    width: 100%;
+    font-weight: 700;
+    font-family: 'Helvetica Neue LT Pro', sans-serif;
+}
+@media only screen and (min-width: 1275px) {
+    .animated-disco-ball {
+        width: 400px !important;
+    }
+    @keyframes disco-ball {
+    0% {
+        top:0px;
+        }
+        100% {
+            top:1800px;
+        }
+    }
+}
+@media only screen and (min-width: 1550px) {
+    .animated-disco-ball {
+        width: 508px !important;
+    }
+    body {
+        font-size: 22px;
+    }
+    @keyframes disco-ball {
+        0% {
+            top:0px;
+        }
+        100% {
+            top:1700px;
+        }
+    }
+}
+@media only screen and (min-width: 1780px) {
+    .month-container-left::after {
+        content: url(img/year-end-2018-month-after-left.png);
+        position: absolute;
+        top: 75px;
+        left: 105px;
+        max-width: 100%;
+    }
+
+    .month-container-right::after {
+        content: url(img/year-end-2018-month-after-right.png);
+        position: absolute;
+        top: 75px;
+        right: 105px;
+        max-width: 100%;
+    }
+    body {
+        font-size: 24px;
+    }
+}
